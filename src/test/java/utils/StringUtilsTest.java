@@ -7,6 +7,10 @@ class StringUtilsTest {
 
     @Test
     void isPositiveNumber() {
+
         assertTrue(StringUtils.isPositiveNumber("12.54"));
+        assertFalse(StringUtils.isPositiveNumber("0"));
+        assertFalse(StringUtils.isPositiveNumber("-15"));
+        ;
     }
 }
